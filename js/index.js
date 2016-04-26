@@ -46,8 +46,8 @@ function pushNot() {
             message.error = function (msg){ console.log(msg); };
             message.channel = 'gcm-test';
             message.gcm = {
-                title: 'Push Demo',
-                message: 'The room temperature is set too high'
+                title: 'Crazy mom is calling..',
+                message: 'Where are you??!!'
             };
 
             message.publish();
