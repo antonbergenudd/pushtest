@@ -1,7 +1,13 @@
+var ref = new Firebase('https://pushtest2.firebaseio.com/');
+ref.once("value", function(snapshot){
+    console.log(snapshot.val());
+})
 var pubnub = PUBNUB.init({
     subscribe_key: 'sub-c-ee2ffedc-0bef-11e6-b422-0619f8945a4f',
     publish_key:   'pub-c-8493cf03-067c-44d2-a665-b307882c6c4a',
 });
+
+var ref = new Firebase('https://pushtest2.firebaseio.com/');
 
 changeTemperature();
 
